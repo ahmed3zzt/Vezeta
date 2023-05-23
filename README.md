@@ -1,2 +1,2 @@
 # Vezeta
- Django Project for Doctors Jobs
+ Django Website For Doctors Job
