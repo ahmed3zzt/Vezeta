@@ -1,7 +1,7 @@
 from django.shortcuts import render
-
-
+from django.contrib.auth.models import User
 # Create your views here.
 
-def index(request):
-    return render(request, 'user/index.html')
+def doctors_list(request):
+    doctors = User.objects.all()
+    return render(request, 'user/doctors_list.html',{"doctors":doctors})
